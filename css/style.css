@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.font-color-red {
+    color: red;
+}
+
+/* PC */
+@media screen and (min-width: 1025px) {
+
+    .me42 header h1 {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        background: #9df;
+    }
+    .me42 main {
+        margin: 0;
+        padding: 40px;
+        background: #e5f5ff;
+    }
+    .me42 main .content {
+        margin: auto;
+        width: 850px;
+    }
+    .me42 main .content #info {
+        margin-bottom: 40px;
+        padding: 30px;
+        background: #fff;
+        border: #000 4px double;
+        line-height: 1.5;
+    }
+    .me42 .content #questions {
+        padding: 30px;
+        background: #fff;
+    }
+    .me42 main .content #questions section {
+        margin-bottom: 50px;
+    }
+    .me42 main .content #questions section p {
+        line-height: 2;
+    }
+    .me42 main .content #questions section p input[type="radio"] {
+        margin: 0 20px 0 30px;
+    }
+    .me42 main .content #questions section p img {
+        display: block;
+        margin: auto;
+    }
+    .me42 main .content #questions input[type="submit"] {
+        display: block;
+        margin: 30px auto;
+        width: 80px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #aaa, #ddd, #aaa);
+        outline: none;
+    }
+    .me42 main .content #questions input[type="submit"]:hover {
+        background: linear-gradient(135deg, #999, #ccc, #999);
+    }
+
+    /* 解説ページ用 */
+    .me42 main .content #result_message {
+        margin: 50px 0;
+        padding: 30px;
+        background: #fff;
+        border: red 2px solid;
+        line-height: 1.8;
+    }
+    .me42 main .content #result_message #result {
+        margin-bottom: 30px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .me42 main .content #result_message #result .score {
+        font-size: 2.4rem;
+    }
+    .me42 main .content #questions section .explanation {
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+    .me42 main .content #questions a {
+        text-decoration: none;
+    }
+    .me42 main .content #questions a button {
+        display: block;
+        margin: 30px auto;
+        width: 140px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border-bottom: solid 2px #222;
+        background: linear-gradient(135deg, #aaa, #ddd, #aaa);
+        outline: none;
+    }
+    .me42 main .content #questions a button:hover {
+        background: linear-gradient(135deg, #999, #ccc, #999);
+    }
+    .me42 main .content #questions a button:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+        border-bottom: none;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 1024px) {
+
+    .me42 header h1 {
+        margin: 0;
+        padding: 20px 2vw;
+        font-size: 2.2rem;
+        text-align: center;
+        background: #9df;
+    }
+    .me42 main {
+        margin: 0;
+        padding: 20px 3vw;
+        background: #e5f5ff;
+    }
+    .me42 main .content {
+        margin: auto;
+    }
+    .me42 main .content #info {
+        margin-bottom: 40px;
+        padding: 3vw;
+        background: #fff;
+        border: #000 4px double;
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+    .me42 .content #questions {
+        padding: 20px 3vw;
+        background: #fff;
+        font-size: 1.4rem;
+    }
+    .me42 main .content #questions section {
+        margin-bottom: 30px;
+    }
+    .me42 main .content #questions section p {
+        line-height: 2.8;
+    }
+    .me42 main .content #questions section p input[type="radio"] {
+        margin: 0 2vw;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .me42 main .content #questions section p img {
+        display: block;
+        margin: auto;
+    }
+    .me42 main .content #questions input[type="submit"] {
+        display: block;
+        margin: 30px auto;
+        width: 80px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #aaa, #ddd, #aaa);
+        outline: none;
+    }
+    .me42 main .content #questions input[type="submit"]:hover {
+        background: linear-gradient(135deg, #999, #ccc, #999);
+    }
+
+    /* 解説ページ用 */
+    .me42 main .content #result_message {
+        margin: 40px 0;
+        padding: 3vw;
+        background: #fff;
+        border: red 2px solid;
+        line-height: 1.8;
+        font-size: 1.6rem;
+    }
+    .me42 main .content #result_message #result {
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .me42 main .content #result_message #result .score {
+        font-size: 2rem;
+    }
+    .me42 main .content #questions section .explanation {
+        margin-top: 10px;
+        padding: 3vw;
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+    .me42 main .content #questions a {
+        text-decoration: none;
+    }
+    .me42 main .content #questions a button {
+        display: block;
+        margin: 30px auto;
+        width: 140px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border-bottom: solid 2px #222;
+        background: linear-gradient(135deg, #aaa, #ddd, #aaa);
+        outline: none;
+    }
+    .me42 main .content #questions a button:hover {
+        background: linear-gradient(135deg, #999, #ccc, #999);
+    }
+    .me42 main .content #questions a button:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+        border-bottom: none;
+    }
+}
